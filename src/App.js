@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense } from "react";
+import "./App.css";
+import { Canvas } from "@react-three/fiber";
+import Experience from "./Experience";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+	return (
+		<main className="w-[100vw] h-[100vh] flex flex-col justify-center">
+			<div className="w-full aspect-square">
+				<Canvas>
+					<Suspense>
+						<Experience />
+					</Suspense>
+				</Canvas>
+			</div>
+		</main>
+	);
 }
-
-export default App;
