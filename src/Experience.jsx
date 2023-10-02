@@ -10,7 +10,7 @@ export default function Experience() {
 			<ambientLight intensity={1} />
 			<directionalLight intensity={7} position={[100, 400, 110]} />
 			<directionalLight intensity={7} position={[100, 400, -110]} />
-			<ScrollControls pages={6} damping={0.25}>
+			<ScrollControls pages={11} damping={0.25}>
 				<Overlay />
 				<BigText />
 				<Chair scale={4} position={[0, -2, -1000]} />
